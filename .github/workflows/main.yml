@@ -28,10 +28,10 @@ jobs:
     - name: create pr
       uses: peter-evans/create-pull-request@v3
       with:
-        base: master-oem
+        base: ${{ github.head_ref }}
         token: ${{ steps.generate-token.outputs.token }}
         title: '[Example] Update report'
-        branch: ${{ github.head_ref }}
+        branch: master-oem
         body: |
             Update report
             - Updated with *today's* date
