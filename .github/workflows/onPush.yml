@@ -16,6 +16,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
+          base: master-oem 
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
