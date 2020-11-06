@@ -24,6 +24,7 @@ jobs:
         private_key: ${{ secrets.APP_PRIVATE_KEY }}
     - uses: actions/checkout@v2
       with:
+        fetch-depth: 0 
         ref: ${{ github.head_ref }}
     - name: create pr
       uses: peter-evans/create-pull-request@v3
