@@ -14,3 +14,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_PREFIX: "master"
           PULL_REQUEST_BRANCH: "master-oem"
+          PULL_REQUEST_TITLE: "Auto PR master-> master-oem"
